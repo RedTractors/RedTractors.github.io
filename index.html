@@ -63,24 +63,24 @@
 
 <body>
     <div class='distanceBox'>
-        <h3> Distance: 0.09 km</h3>
-        <h3> WalkingTime: 13m ,44s </h3>
-        <h3> Time Since Last Point: 9s(07:49:51)</h3>
-        <h5> Data Updated: 07:50:01</h5>
+        <h3> Distance: 0.08 km</h3>
+        <h3> WalkingTime: 14m ,39s </h3>
+        <h3> Time Since Last Point: 14s(07:50:46)</h3>
+        <h5> Data Updated: 07:51:01</h5>
         </h1>
     </div>
 
     <div id='map'></div>
     <script>
-        var timeSinceLastCheckpoint = {"string":"9s","seconds":9};
-        //var secondsFromLastPoint = 9.801000118255615;
-        //var timeSinceLastCheckpointString = 9s(07:49:51);
+        var timeSinceLastCheckpoint = {"string":"14s","seconds":14};
+        //var secondsFromLastPoint = 14.325999975204468;
+        //var timeSinceLastCheckpointString = 14s(07:50:46);
 
         mapboxgl.accessToken = 'pk.eyJ1IjoiYWFyb25zaW1zIiwiYSI6ImNqN2Z0NjVkYjExNHkyd28yNnc5cXhjNWgifQ.cgZZrzDKR2B8wX9TBXJ_kw';
         var map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/streets-v9',
-            center: [144.969744,-37.73725],
+            center: [144.969733,-37.737268],
             zoom: 15
         });
 
@@ -94,7 +94,7 @@
                     "type": "geojson",
                     "data":
 
-                        {"type":"Feature","geometry":{"type":"LineString","coordinates":[[144.969733,-37.737267],[144.969804,-37.73764],[144.969744,-37.73725]]},"properties":{}}
+                        {"type":"Feature","geometry":{"type":"LineString","coordinates":[[144.969733,-37.737267],[144.969804,-37.73764],[144.969733,-37.737268]]},"properties":{}}
                 },
                 "layout": {
                     "line-join": "round",
@@ -112,7 +112,7 @@
                     "type": "geojson",
                     "data":
 
-                        {"type":"Feature","geometry":{"type":"LineString","coordinates":[[144.969733,-37.737267],[144.969804,-37.73764],[144.969744,-37.73725]]},"properties":{}}
+                        {"type":"Feature","geometry":{"type":"LineString","coordinates":[[144.969733,-37.737267],[144.969804,-37.73764],[144.969733,-37.737268]]},"properties":{}}
                 },
                 "layout": {
                     "line-join": "round",
@@ -135,7 +135,7 @@
                 "type": "symbol",
                 "source": {
                     "type": "geojson",
-                    "data": {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[144.969744,-37.73725]},"properties":{"name":"team","title":"team","icon":"amusement-park"}}]}
+                    "data": {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[144.969733,-37.737268]},"properties":{"name":"team","title":"team","icon":"amusement-park"}}]}
                 },
                 "layout": {
                     "icon-image": "{icon}-15",
@@ -177,7 +177,7 @@
 
 
 
-            var geojson = {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[144.969744,-37.73725]},"properties":{"name":"team","title":"team","icon":"amusement-park"}}]};
+            var geojson = {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[144.969733,-37.737268]},"properties":{"name":"team","title":"team","icon":"amusement-park"}}]};
 
             // add markers to map
             geojson.features.forEach(function(marker) {
