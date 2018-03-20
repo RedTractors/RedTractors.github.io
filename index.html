@@ -63,24 +63,24 @@
 
 <body>
     <div class='distanceBox'>
-        <h3> Distance: 23.01 km</h3>
-        <h3> WalkingTime: 1h ,11m ,45s </h3>
-        <h3> Time Since Last Point: 9s(08:47:52)</h3>
-        <h5> Data Updated: 08:48:02</h5>
+        <h3> Distance: 23.03 km</h3>
+        <h3> WalkingTime: 1h ,12m ,46s </h3>
+        <h3> Time Since Last Point: 8s(08:48:53)</h3>
+        <h5> Data Updated: 08:49:02</h5>
         </h1>
     </div>
 
     <div id='map'></div>
     <script>
-        var timeSinceLastCheckpoint = {"string":"9s","seconds":9};
-        //var secondsFromLastPoint = 9.164000034332275;
-        //var timeSinceLastCheckpointString = 9s(08:47:52);
+        var timeSinceLastCheckpoint = {"string":"8s","seconds":8};
+        //var secondsFromLastPoint = 8.742000102996826;
+        //var timeSinceLastCheckpointString = 8s(08:48:53);
 
         mapboxgl.accessToken = 'pk.eyJ1IjoiYWFyb25zaW1zIiwiYSI6ImNqN2Z0NjVkYjExNHkyd28yNnc5cXhjNWgifQ.cgZZrzDKR2B8wX9TBXJ_kw';
         var map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/streets-v9',
-            center: [144.963574,-37.821064],
+            center: [144.963358,-37.821198],
             zoom: 15
         });
 
@@ -94,7 +94,7 @@
                     "type": "geojson",
                     "data":
 
-                        {"type":"Feature","geometry":{"type":"LineString","coordinates":[[144.969733,-37.737267],[144.969804,-37.73764],[144.969783,-37.737161,65],[144.969391,-37.737263,64],[144.969129,-37.738123,66],[144.967349,-37.738097,67],[144.967139,-37.738636,65],[144.966749,-37.740998,63],[144.965979,-37.744155,71],[144.965348,-37.748731,66],[144.964107,-37.75523,77],[144.9634,-37.760056,71],[144.963159,-37.760721,70],[144.963568,-37.821045],[144.96312,-37.76153],[144.962732,-37.82049],[144.963509,-37.820842],[144.963729,-37.820735,30],[144.963825,-37.821015,31],[144.963401,-37.820954],[144.963574,-37.821064,31]]},"properties":{}}
+                        {"type":"Feature","geometry":{"type":"LineString","coordinates":[[144.969733,-37.737267],[144.969804,-37.73764],[144.969783,-37.737161,65],[144.969391,-37.737263,64],[144.969129,-37.738123,66],[144.967349,-37.738097,67],[144.967139,-37.738636,65],[144.966749,-37.740998,63],[144.965979,-37.744155,71],[144.965348,-37.748731,66],[144.964107,-37.75523,77],[144.9634,-37.760056,71],[144.963159,-37.760721,70],[144.963568,-37.821045],[144.96312,-37.76153],[144.962732,-37.82049],[144.963509,-37.820842],[144.963809,-37.820811,31],[144.963825,-37.821015,31],[144.963401,-37.820954],[144.963574,-37.821064,31],[144.963358,-37.821198]]},"properties":{}}
                 },
                 "layout": {
                     "line-join": "round",
@@ -112,7 +112,7 @@
                     "type": "geojson",
                     "data":
 
-                        {"type":"Feature","geometry":{"type":"LineString","coordinates":[[144.969733,-37.737267],[144.969804,-37.73764],[144.969783,-37.737161,65],[144.969391,-37.737263,64],[144.969129,-37.738123,66],[144.967349,-37.738097,67],[144.967139,-37.738636,65],[144.966749,-37.740998,63],[144.965979,-37.744155,71],[144.965348,-37.748731,66],[144.964107,-37.75523,77],[144.9634,-37.760056,71],[144.963159,-37.760721,70],[144.963568,-37.821045],[144.96312,-37.76153],[144.962732,-37.82049],[144.963509,-37.820842],[144.963729,-37.820735,30],[144.963825,-37.821015,31],[144.963401,-37.820954],[144.963574,-37.821064,31]]},"properties":{}}
+                        {"type":"Feature","geometry":{"type":"LineString","coordinates":[[144.969733,-37.737267],[144.969804,-37.73764],[144.969783,-37.737161,65],[144.969391,-37.737263,64],[144.969129,-37.738123,66],[144.967349,-37.738097,67],[144.967139,-37.738636,65],[144.966749,-37.740998,63],[144.965979,-37.744155,71],[144.965348,-37.748731,66],[144.964107,-37.75523,77],[144.9634,-37.760056,71],[144.963159,-37.760721,70],[144.963568,-37.821045],[144.96312,-37.76153],[144.962732,-37.82049],[144.963509,-37.820842],[144.963809,-37.820811,31],[144.963825,-37.821015,31],[144.963401,-37.820954],[144.963574,-37.821064,31],[144.963358,-37.821198]]},"properties":{}}
                 },
                 "layout": {
                     "line-join": "round",
@@ -135,7 +135,7 @@
                 "type": "symbol",
                 "source": {
                     "type": "geojson",
-                    "data": {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[144.963574,-37.821064]},"properties":{"name":"team","title":"team","icon":"amusement-park"}}]}
+                    "data": {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[144.963358,-37.821198]},"properties":{"name":"team","title":"team","icon":"amusement-park"}}]}
                 },
                 "layout": {
                     "icon-image": "{icon}-15",
@@ -177,7 +177,7 @@
 
 
 
-            var geojson = {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[144.963574,-37.821064]},"properties":{"name":"team","title":"team","icon":"amusement-park"}}]};
+            var geojson = {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[144.963358,-37.821198]},"properties":{"name":"team","title":"team","icon":"amusement-park"}}]};
 
             // add markers to map
             geojson.features.forEach(function(marker) {
