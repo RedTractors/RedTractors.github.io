@@ -5,71 +5,71 @@
     <meta charset='utf-8' />
     <title>Add a GeoJSON line</title>
 
-    <xmeta http-equiv="refresh" content="30">
-        <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
-        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-            }
-            
-            h3 {
-                margin-top: 0;
-                margin-bottom: 4px;
-            }
-            
-            #map {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                width: 100%;
-            }
-            
-            .markerRT {
-                background-image: url('redTractor.png');
-                background-size: cover;
-                width: 50px;
-                height: 50px;
-                xxborder-radius: 50%;
-                cursor: pointer;
-            }
-            
-            .markerFinish {
-                background-image: url('finish.png');
-                background-size: cover;
-                width: 50px;
-                height: 50px;
-                xxborder-radius: 50%;
-                cursor: pointer;
-            }
-            
-            .distanceBox {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                background: rgba(255, 255, 255, 0.562);
-                z-index: 1000;
-                padding: 10px;
-            }
-        </style>
+    <meta http-equiv="refresh" content="30">
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        h3 {
+            margin-top: 0;
+            margin-bottom: 4px;
+        }
+        
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        .markerRT {
+            background-image: url('redTractor.png');
+            background-size: cover;
+            width: 50px;
+            height: 50px;
+            xxborder-radius: 50%;
+            cursor: pointer;
+        }
+        
+        .markerFinish {
+            background-image: url('finish.png');
+            background-size: cover;
+            width: 50px;
+            height: 50px;
+            xxborder-radius: 50%;
+            cursor: pointer;
+        }
+        
+        .distanceBox {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: rgba(255, 255, 255, 0.562);
+            z-index: 1000;
+            padding: 10px;
+        }
+    </style>
 </head>
 
 <body>
     <div class='distanceBox'>
         <h3> Distance: 56.18 km</h3>
         <h3> WalkingTime: 10h ,45m ,38s </h3>
-        <h3> Time Since Update: 1h ,49m ,21s(19:22:57)</h3>
+        <h3> Time Since Update: 2h ,20m ,5s(19:22:57)</h3>
         <h3> Distance: 56.18 km</h3>
         </h1>
     </div>
 
     <div id='map'></div>
     <script>
-        var timeSinceLastCheckpoint = {"string":"1h ,49m ,21s","hours":1,"minutes":49,"seconds":21};
-        //var secondsFromLastPoint = 6561.132999897003;
-        //var timeSinceLastCheckpointString = 1h ,49m ,21s(19:22:57);
+        var timeSinceLastCheckpoint = {"string":"2h ,20m ,5s","hours":2,"minutes":20,"seconds":5};
+        //var secondsFromLastPoint = 8405.132999897003;
+        //var timeSinceLastCheckpointString = 2h ,20m ,5s(19:22:57);
 
         mapboxgl.accessToken = 'pk.eyJ1IjoiYWFyb25zaW1zIiwiYSI6ImNqN2Z0NjVkYjExNHkyd28yNnc5cXhjNWgifQ.cgZZrzDKR2B8wX9TBXJ_kw';
         var map = new mapboxgl.Map({
