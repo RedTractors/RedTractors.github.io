@@ -69,9 +69,15 @@ undefined<!DOCTYPE html>
 
 <body ng-app="RedTractorsApp">
     <div ng-controller="RedTractorsController" class='distanceBox'>
-        <h3> Distance: {{setup.setup.distance}} km</h3>
-        <h3> WalkingTime: {{setup.setup.walktime}} </h3>
-        <h3> Time Since Last Point: {{setup.setup.timeSinceLastCheckpointString}}</h3>
+        <div ng-hide="setup.setup.notReady">
+            <h3> Distance: {{setup.setup.distance}} km</h3>
+            <h3> WalkingTime: {{setup.setup.walktime}} </h3>
+            <h3> Time Since Last Point: {{setup.setup.timeSinceLastCheckpointString}}</h3>
+        </div>
+        <div ng-show="setup.setup.notReady" style="color:orange">
+            <h3> Not Started Yet</h3>
+        </div>
+
         <h5> Data Updated: {{setup.setup.scriptLastRunAt}}</h5>
         </h1>
     </div>
@@ -106,7 +112,7 @@ undefined<!DOCTYPE html>
         angular.module('RedTractorsApp', [])
             .controller('RedTractorsController', function($scope, $http, $log, $interval) {
 
-                $scope.setup = {"setup":{"notReady":true,"distance":null,"secondsFromLastPoint":null,"timeSinceLastCheckpoint":null,"timeSinceLastCheckpointString":null,"walktime":null,"scriptLastRunAt":"22:36:09"},"lastPoint":[145.406996,-37.824731],"geojsonTeamPoints":{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[145.406996,-37.824731]},"properties":{"name":"team","title":"team"}}]},"geoJsonLine":{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[145.406996,-37.824731]},"properties":{"name":"team","title":"team"}}]}};
+                $scope.setup = {"setup":{"notReady":true,"distance":null,"secondsFromLastPoint":null,"timeSinceLastCheckpoint":null,"timeSinceLastCheckpointString":null,"walktime":null,"scriptLastRunAt":"22:40:17"},"lastPoint":[145.406996,-37.824731],"geojsonTeamPoints":{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[145.406996,-37.824731]},"properties":{"name":"team","title":"team"}}]},"geoJsonLine":{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[145.406996,-37.824731]},"properties":{"name":"team","title":"team"}}]}};
 
                 mapboxgl.accessToken = 'pk.eyJ1IjoiYWFyb25zaW1zIiwiYSI6ImNqN2Z0NjVkYjExNHkyd28yNnc5cXhjNWgifQ.cgZZrzDKR2B8wX9TBXJ_kw';
                 map = new mapboxgl.Map({
