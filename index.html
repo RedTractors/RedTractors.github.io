@@ -12,6 +12,21 @@ undefined<!DOCTYPE html>
 
     <script src="lines.js"></script>
 
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104176150-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-104176150-2');
+    </script>
+
+
     <style>
         body {
             margin: 0;
@@ -112,7 +127,7 @@ undefined<!DOCTYPE html>
         angular.module('RedTractorsApp', [])
             .controller('RedTractorsController', function($scope, $http, $log, $interval) {
 
-                $scope.setup = {"setup":{"notReady":true,"distance":null,"secondsFromLastPoint":null,"timeSinceLastCheckpoint":null,"timeSinceLastCheckpointString":null,"walktime":null,"scriptLastRunAt":"08:05:09"},"lastPoint":[145.406996,-37.824731],"geojsonTeamPoints":{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[145.406996,-37.824731]},"properties":{"name":"team","title":"team"}}]},"geoJsonLine":{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[145.406996,-37.824731]},"properties":{"name":"team","title":"team"}}]}};
+                $scope.setup = {"setup":{"notReady":true,"distance":null,"secondsFromLastPoint":null,"timeSinceLastCheckpoint":null,"timeSinceLastCheckpointString":null,"walktime":null,"scriptLastRunAt":"08:05:28"},"lastPoint":[145.406996,-37.824731],"geojsonTeamPoints":{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[145.406996,-37.824731]},"properties":{"name":"team","title":"team"}}]},"geoJsonLine":{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[145.406996,-37.824731]},"properties":{"name":"team","title":"team"}}]}};
 
                 mapboxgl.accessToken = 'pk.eyJ1IjoiYWFyb25zaW1zIiwiYSI6ImNqN2Z0NjVkYjExNHkyd28yNnc5cXhjNWgifQ.cgZZrzDKR2B8wX9TBXJ_kw';
                 map = new mapboxgl.Map({
